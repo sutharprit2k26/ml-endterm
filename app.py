@@ -6,9 +6,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 st.set_option('deprecation.showfileUploaderEncoding', False)
 # Load the pickled model
-model = pickle.load(open('/content/drive/My Drive/ML lab/endterm/model.pkl', 'rb')) 
+model = pickle.load(open('model.pkl', 'rb')) 
 # Feature Scaling
-dataset = pd.read_csv('/content/drive/My Drive/ML lab/endterm/Classification Dataset33.csv')
+dataset = pd.read_csv('Classification Dataset33.csv')
 # Extracting independent variable:
 X = dataset.iloc[:, 0:8].values
 # Encoding the Independent Variable
